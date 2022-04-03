@@ -1,0 +1,138 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-lightgrey: hsl(217, 12%, 63%);
+  --clr-mediumgrey: hsl(216, 12%, 54%);
+  --clr-darkblue: hsl(213, 19%, 18%);
+  --clr-verydarkblue: hsl(216, 12%, 8%);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  font-family: "Overpass", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 3rem;
+}
+
+.box {
+  background-color: var(--clr-verydarkblue);
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(5, auto);
+  padding: 2.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.box__star {
+  background-image: url("../../images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+  background-color: var(--clr-darkblue);
+  border-radius: 100%;
+  padding: 0.5rem;
+  height: 40px;
+  width: 40px;
+}
+
+.box__title {
+  color: var(--clr-white);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+.box__message {
+  color: var(--clr-mediumgrey);
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.box__form {
+  margin: 3rem 0;
+}
+
+.box__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.box__form__label {
+  background: var(--clr-darkblue);
+  border-radius: 100%;
+  color: var(--clr-lightgrey);
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+
+.box__form__label:hover {
+  background-color: var(--clr-lightgrey);
+  color: var(--clr-white);
+}
+
+.box__form__label:focus-within {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+}
+
+.box__form__input {
+  appearance: none;
+  z-index: -1;
+}
+
+.box__btn {
+  background-color: var(--clr-orange);
+  border: none;
+  border-radius: 20px;
+  color: var(--clr-white);
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.box__btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 580px) {
+  .box {
+    width: 350px;
+  }
+}

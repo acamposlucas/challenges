@@ -1,0 +1,45 @@
+.box-2 {
+  background-color: var(--clr-verydarkblue);
+  border-radius: 10px;
+  display: none;
+  gap: 1rem;
+  grid-template-rows: repeat(4, auto);
+  left: 50%;
+  opacity: 1;
+  padding: 2.5rem;
+  position: absolute;
+  text-align: center;
+  top: 48.925%;
+  transform: translate(-50%, -50%);
+  width: 327px;
+}
+
+.box-2__image {
+  background-image: url(../../images/illustration-thank-you.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 167px;
+  width: 180px;
+  margin-inline: auto;
+}
+
+.box-2__ratingMessage {
+  background: var(--clr-darkblue);
+  border-radius: 20px;
+  color: var(--clr-orange);
+  font-size: 2rem;
+  margin-inline: auto;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.box-2__ty {
+  color: var(--clr-white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.box-2__message {
+  color: var(--clr-mediumgrey);
+  font-size: 1.8rem;
+}

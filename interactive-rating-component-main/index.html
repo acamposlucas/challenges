@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/box.css" />
+    <link rel="stylesheet" href="./assets/css/box-2.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="box" id="box-1">
+      <div class="box__star"></div>
+      <span class="box__title">How did we do?</span>
+      <span class="box__message">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </span>
+      <form action="#" class="box__form">
+        <ul class="box__list">
+          <li class="box__list__item">
+            <label for="r1" class="box__form__label"
+              >1<input
+                id="r1"
+                type="radio"
+                name="ratings"
+                value="1"
+                class="box__form__input"
+              />
+            </label>
+          </li>
+          <li class="box__list__item">
+            <label for="r2" class="box__form__label"
+              >2<input
+                id="r2"
+                type="radio"
+                name="ratings"
+                value="2"
+                class="box__form__input"
+              />
+            </label>
+          </li>
+          <li class="box__list__item">
+            <label for="r3" class="box__form__label"
+              >3<input
+                id="r3"
+                type="radio"
+                name="ratings"
+                value="3"
+                class="box__form__input"
+              />
+            </label>
+          </li>
+          <li class="box__list__item">
+            <label for="r4" class="box__form__label"
+              >4<input
+                id="r4"
+                type="radio"
+                name="ratings"
+                value="4"
+                class="box__form__input"
+              />
+            </label>
+          </li>
+          <li class="box__list__item">
+            <label for="r5" class="box__form__label"
+              >5<input
+                id="r5"
+                type="radio"
+                name="ratings"
+                value="5"
+                class="box__form__input"
+              />
+            </label>
+          </li>
+        </ul>
+      </form>
+      <button type="submit" class="box__btn" id="submit">Submit</button>
+    </div>
+
+    <div class="box-2" id="box-2">
+      <div class="box-2__image"></div>
+      <span class="box-2__ratingMessage"
+        >You selected <span id="selectedInput"></span> out of 5</span
+      >
+      <span class="box-2__ty">Thank you!</span>
+      <span class="box-2__message">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </span>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
