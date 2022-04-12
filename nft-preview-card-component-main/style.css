@@ -1,0 +1,142 @@
+:root {
+  --clr-primary: hsl(215, 51%, 70%);
+  --clr-secondary: hsl(178, 100%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-mainbg: hsl(217, 54%, 11%);
+  --clr-cardbg: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+
+  --fw-regular: 400;
+  --fw-light: 300;
+  --fw-bold: 600;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: var(--clr-mainbg);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  align-items: center;
+  color: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+hr {
+  color: var(--clr-line);
+}
+
+.box {
+  background-color: var(--clr-cardbg);
+  border-radius: 16px;
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 350px;
+}
+
+.box__img {
+  aspect-ratio: 1;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.box__overlay {
+  aspect-ratio: 1;
+  width: inherit;
+  position: absolute;
+}
+
+.box__overlay__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img__equilibrium {
+  aspect-ratio: 1;
+  width: inherit;
+  position: absolute;
+}
+
+h1 {
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--clr-secondary);
+}
+
+.box__info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box__info__value {
+  color: var(--clr-secondary);
+}
+
+.box__info__value::before,
+.box__info__days::before {
+  aspect-ratio: 1;
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 24px;
+}
+
+.box__info__value::before {
+  background-image: url(./images/icon-ethereum.svg);
+}
+
+.box__info__days::before {
+  background-image: url(./images/icon-clock.svg);
+}
+
+.box__avatar {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.box__avatar__creator {
+  color: var(--clr-white);
+}
+
+.box__avatar__creator:hover {
+  color: var(--clr-secondary);
+  cursor: pointer;
+}
+
+.img__avatar {
+  aspect-ratio: 1;
+  border: 1px solid var(--clr-white);
+  border-radius: 100%;
+  width: 50px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
