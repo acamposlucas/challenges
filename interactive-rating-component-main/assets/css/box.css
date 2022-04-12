@@ -75,16 +75,22 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+  list-style-type: none;
   padding: 1rem 0;
 }
 
 .box__form__label {
+  align-items: center;
+  aspect-ratio: 1;
   background: var(--clr-darkblue);
   border-radius: 100%;
+  display: flex;
   color: var(--clr-lightgrey);
   cursor: pointer;
   font-size: 1.8rem;
+  justify-content: center;
   padding: 2rem;
+  width: 45px;
 }
 
 .box__form__label:hover {
